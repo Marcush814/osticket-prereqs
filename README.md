@@ -23,8 +23,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Create a VM in Microsoft Azure
 - Installation of Prerequisites For OsTicket
 - Installation of OsTicket and Creating a database using HeidiSQL
-- Post installation install
-- Ticket Lifestyle
+- 
+- 
 
 <h2>Installation Steps</h2>
 
