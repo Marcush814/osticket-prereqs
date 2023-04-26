@@ -29,13 +29,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 
- Create Virtual Machine in Azure
+ ***Create Virtual Machine in Azure*** 
  
 <p>
 <img src="https://i.imgur.com/azannJE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine or VM with 2-4 Virtual CPUs allow VM to create new Vnet:
+
+***Create a Windows 10 Virtual Machine or VM with 2-4 Virtual CPUs allow VM to create new Vnet:***
+
 </p>
 <br />
 
@@ -43,7 +45,9 @@ Create a Windows 10 Virtual Machine or VM with 2-4 Virtual CPUs allow VM to crea
 <img src="https://i.imgur.com/oTizlQz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Connect to your Virtual Machine with Remote Desktop using the public ip address of your virtual machine:
+
+***Connect to your Virtual Machine with Remote Desktop using the public ip address of your virtual machine:***
+
 </p>
 <br />
 
@@ -51,14 +55,18 @@ Connect to your Virtual Machine with Remote Desktop using the public ip address 
 <img src="https://i.imgur.com/mPO7Xyv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install/ Enabel IIS in Windows:
+
+***Install/ Enabel IIS in Windows:***
+
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/3JbkLSP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install required Programs to run Osticket PHP 7.3.8 will have to be unzipped in the directory C:\PHP:
+
+***Install required Programs to run Osticket PHP 7.3.8 will have to be unzipped in the directory C:\PHP:***
+
 </p>
 <br />
 
@@ -66,7 +74,9 @@ Install required Programs to run Osticket PHP 7.3.8 will have to be unzipped in 
 <img src="https://i.imgur.com/ureGH7f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install MySQL:
+
+***Install MySQL:***
+
 </p>
 <br />
 
@@ -75,7 +85,9 @@ Install MySQL:
 </p>
 
 <p>
-Open IIS as an Administrator and Register PHP:
+
+***Open IIS as an Administrator and Register PHP:***
+
 </p>
 <br />
 
@@ -86,13 +98,16 @@ Open IIS as an Administrator and Register PHP:
 <img src="https://i.imgur.com/8xMFrke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then you would register PHP in IIS by going to PHP manager inisde of IIS:
+
+***Then register PHP in IIS by going to PHP manager inisde of IIS:***
+
 </p>
 <br />
 <img src="https://i.imgur.com/r8tvKWb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 
-Install Osticket From Files:
+***Install Osticket From Files:***
+
 </p>
 <br />
 
@@ -100,17 +115,20 @@ Install Osticket From Files:
 <img src="https://i.imgur.com/XvV5L4F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then from within the osticket file we drag the upload folder into the wwwroot folder and make sure to rename upload folder to "osTicket". 
+
+***Then from within the osticket file we drag the upload folder into the wwwroot folder and make sure to rename upload folder to "osTicket".***
+
 </p>
 <br />
 
 <p>
 
-Next we open osticket from witin IIS to do so you would 
+***Next open osticket from witin IIS to do so you would*** 
 
-Go to sites -> Default -> osTicket
+**Go to sites -> Default -> osTicket**
 
 and then on the right, click “Browse *:80” and it should look like so:
+
 </p>
 <br />
 
@@ -118,13 +136,16 @@ and then on the right, click “Browse *:80” and it should look like so:
 <img src="https://i.imgur.com/Iq4klXh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Note that some extensions are disabled so we have to enable them inside of IIS
+
+***Note that some extensions are disabled so we have to enable them inside of IIS***
+
 <p>
-Enable: php_imap.dll
 
-Enable: php_intl.dll
+**Enable: php_imap.dll**
 
-Enable: php_opcache.dll
+**Enable: php_intl.dll**
+
+**Enable: php_opcache.dll**
 
 </p>
 
@@ -133,15 +154,15 @@ Enable: php_opcache.dll
 
 <p>
 
-Refresh osticket and Observe changes:
+***Refresh osticket and Observe changes:***
 
-Rename: ost-config.php
+**Rename: ost-config.php**
 
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+**From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php**
 
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+**To: C:\inetpub\wwwroot\osTicket\include\ost-config.php**
 
-Then assign permissions: 
+**Then assign permissions:** 
 
 Disable inheritance -> Remove All
 
@@ -159,11 +180,13 @@ New Permissions -> Everyone -> All
 <img src="https://i.imgur.com/pDgKZoj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Continue to set up Osticket in the browser (click continue)
 
-Name Helpdesk.
+***Continue to set up Osticket in the browser (click continue)***
 
-Deafault email ( gets emails from customers):
+**Name Helpdesk.**
+
+**Deafault email ( gets emails from customers):**
+
 </p>
 <br />
 
@@ -171,7 +194,9 @@ Deafault email ( gets emails from customers):
 <img src="https://i.imgur.com/fujSm1m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Download and install HedidiSQL
+
+***Download and install HedidiSQL***
+
 </p>
 <br />
 
@@ -179,7 +204,9 @@ Download and install HedidiSQL
 <img src="https://i.imgur.com/qJx0pQy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Connect to session: 
+
+***Connect to session:*** 
+
 </p>
 <br />
 
@@ -187,7 +214,9 @@ Connect to session:
 <img src="https://i.imgur.com/2qU4pLy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Database
+
+***Create a Database***
+
 </p>
 <br />
 
@@ -195,13 +224,15 @@ Create a Database
 <img src="https://i.imgur.com/fuL3q4t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Continue to set up osTicket in the Browser
 
-MySQL Database: osTIcket
+***Continue to set up osTicket in the Browser***
 
-MySQL Username: root
+**MySQL Database: osTIcket**
 
-MySQL Password: Password1:
+**MySQL Username: root**
+
+**MySQL Password: Password1:**
+
 </p>
 <br />
 
@@ -209,7 +240,9 @@ MySQL Password: Password1:
 <img src="https://i.imgur.com/HPsJIAZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Click install now and hopefully there are no errors!
+
+***Click install now and hopefully there are no errors!***
+
 </p>
 <br />
 
@@ -217,9 +250,10 @@ Click install now and hopefully there are no errors!
 <img src="https://i.imgur.com/DPQQjXl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Clean up: 
 
-Delete: C:\inetpub\wwwroot\osTicket\setup
+***Clean up:***
+
+**Delete: C:\inetpub\wwwroot\osTicket\setup**
 
 </p>
 <br />
@@ -228,7 +262,9 @@ Delete: C:\inetpub\wwwroot\osTicket\setup
 <img src="https://i.imgur.com/dqqKv1I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+***Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php***
+
 </p>
 <br />
 
@@ -236,7 +272,8 @@ Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-conf
 <img src="https://i.imgur.com/NSPQcRM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Log into osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
+
+***Log into osTicket Admin Panel (http://localhost/osTicket/scp/login.php)***
 
 
 </p>
@@ -246,10 +283,12 @@ Log into osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
 <img src="https://i.imgur.com/TLzffXD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-And this completes my tutorial of the installaion of osTicket i hope it helped you.
 
-Now you can practice having your own mock help desk to prepare you for a positon in help desk
+**And this completes my tutorial of the installaion of osTicket i hope it helped you.**
 
-or it support role.
+**Now you can practice having your own mock help desk to prepare you for a positon in help desk**
+
+**or it support role.**
+
 </p>
 <br />
